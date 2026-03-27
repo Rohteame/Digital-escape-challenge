@@ -1,0 +1,25 @@
+<%- include("partials/header.ejs") %>
+
+<body id="landing-page">
+	<div class="container">
+		<img src="/assets/IITA Logo 1.png" class="img-fluid" alt="..." />
+		<h2 class="equal-sans display-6 fst-italic">
+			The IT Service Management Team Presents
+		</h2>
+		<h1 class="equal-sans display-1">
+			THE <br />DIGITAL <br />ESCAPE <br />CHALLENGE
+		</h1>
+		<p class="metropolis w-75">
+			Put your knowledge and skills to the test in this short, interactive
+			challenge designed to sharpen your data security awareness.
+		</p>
+		<a href="/background" class="btn metropolis primary-btn">
+			Get Started <i class="fa-solid fa-angle-right ms-3"></i
+		></a>
+	</div>
+	<script>
+		sessionStorage.clear();
+	</script>
+
+	<%- include("partials/footer.ejs") %>
+</body>

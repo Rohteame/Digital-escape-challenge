@@ -1,0 +1,152 @@
+<%- include("partials/header.ejs") %>
+<body id="room1">
+	<div class="container text-center d-flex flex-column gap-sm-3">
+		<div class="top-sec d-flex align-self-center metropolis">
+			<div id="timer" class="timer-box fs-3 fw-bold px-3 me-3"></div>
+			<div id="restart fs-3">
+				<button
+					onclick="restartGame()"
+					class="btn btn-outline-danger justify-self-center fw-bold"
+				>
+					<i class="fa-solid fa-rotate-left"></i> Restart
+				</button>
+			</div>
+		</div>
+		<div class="header">
+			<h1 class="display-3 text-decoration-underline">ROOM 1 - Password Vault</h1>
+			<h2 class="display-6">
+				You are locked out of your system, your need to complete the task in order
+				to get the master code:
+			</h2>
+		</div>
+		<div class="task text-start">
+			<p>
+				<span class="fw-bold">Task:</span> Select the scenario which follows
+				industry-standard 3-2-1 Rule being the best and safest methodology of ensure
+				data backup and security.
+			</p>
+		</div>
+		<div class="container cards-section">
+			<div class="row">
+				<div class="col-lg-4 col-md-4 col-6 d-flex justify-content-center">
+					<a
+						type="button"
+						class="card mt-1"
+						data-bs-toggle="modal"
+						data-bs-target="#message-modal"
+						data-bs-header="❌ Oops!! Not Quite"
+						data-bs-title="Bagged & Tagged (But Not Safe!)"
+						data-bs-body="Storing your laptop and your USB in the same bag is a single point of failure. If the bag is stolen or lost, all your data goes with it. You haven't met the 2 different media or 1 off-site requirements."
+						data-bs-button="Try Again"
+						data-bs-correct="false"
+					>
+						<img
+							src="/assets/option 1.png"
+							class="card-img-top img-fluid"
+							alt="..."
+						/>
+						<h5 class="card-title display-5 text-decoration-underline">OPTION 1</h5>
+						<div class="card-body mt-2">
+							<p class="card-text">
+								Files on a Laptop + Files on a USB in the same laptop bag.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-6 d-flex justify-content-center">
+					<a
+						type="button"
+						class="card mt-1"
+						data-bs-toggle="modal"
+						data-bs-target="#message-modal"
+						data-bs-header="✅ 3-2-1 Rule Mastered"
+						data-bs-title="Perfect. You have:"
+						data-bs-body="3 copies of data (Laptop, Cloud, External), 2 different media types (Disk and Cloud) and 1 copy off-site (Cloud).
+							This ensures that even if your house is robbed or your hardware fails, your data survives."
+						data-bs-button="Get Master Code"
+						data-bs-correct="true"
+					>
+						<img
+							src="/assets/option 2.png"
+							class="card-img-top img-fluid"
+							alt="..."
+						/>
+						<h5 class="card-title display-5 text-decoration-underline">OPTION 2</h5>
+						<div class="card-body mt-2">
+							<p class="card-text">
+								Files on a Laptop + Files on a Cloud Drive + Files on an External Drive
+								at home.
+							</p>
+						</div>
+					</a>
+				</div>
+				<div class="col-lg-4 col-md-4 col-6 d-flex justify-content-center">
+					<a
+						type="button"
+						class="card mt-1"
+						data-bs-toggle="modal"
+						data-bs-target="#message-modal"
+						data-bs-header="❌ Oops!! Not Quite"
+						data-bs-title="Double Trouble"
+						data-bs-body="Two laptops are still two of the same device types. If a virus hits your network or your house floods, both are equally vulnerable. This misses the 2 different media and 1 off-site safety nets."
+						data-bs-button="Try Again"
+						data-bs-correct="false"
+					>
+						<img
+							src="/assets/option 3.png"
+							class="card-img-top img-fluid"
+							alt="..."
+						/>
+						<h5 class="card-title display-5 text-decoration-underline">OPTION 3</h5>
+						<div class="card-body mt-2">
+							<p class="card-text">
+								Files on a Laptop + Files on a USB in the same laptop bag.
+							</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Modals -->
+	<div
+		class="modal fade"
+		id="message-modal"
+		tabindex="-1"
+		aria-labelledby="messageModalLabel"
+		aria-hidden="true"
+		data-bs-backdrop="static"
+		data-bs-keyboard="false"
+	>
+		<div class="modal-dialog">
+			<div class="modal-content p-4">
+				<div class="modal-header">
+					<h1 class="modal-heading fs-3 text-center">...</h1>
+
+					<button
+						type="button"
+						class="btn-close"
+						data-bs-dismiss="modal"
+						aria-label="Close"
+					></button>
+				</div>
+				<h1 class="modal-title fs-5" id="messageModalLabel">...</h1>
+				<div class="modal-body p-0 mt-2">...</div>
+				<div class="modal-footer justify-content-center">
+					<button
+						type="button"
+						class="try-again-btn btn btn-secondary"
+						data-bs-dismiss="modal"
+					></button>
+					<a
+						href="/room2"
+						type="button"
+						class="btn proceed-btn btn-primary hide"
+					></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<%- include("partials/footer.ejs") %>

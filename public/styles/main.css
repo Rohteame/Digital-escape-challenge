@@ -1,0 +1,373 @@
+:root {
+	--metropolis: "Metropolis", sans-serif;
+	--equal-sans: "Equal Sans Demo", sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+html,
+body {
+	min-height: 100vh;
+}
+
+body {
+	padding: 1rem 0;
+	display: flex;
+	align-items: center;
+	color: #fff;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.cards-section a:hover {
+	opacity: 0.9;
+}
+
+.modal {
+	color: black;
+	font-family: "Metropolis", sans-serif;
+}
+
+.show {
+	display: flex;
+}
+
+.hide {
+	display: none;
+}
+
+.equal-sans {
+	font-family: "Equal Sans Demo", sans-serif;
+}
+
+.metropolis {
+	font-family: "Metropolis", sans-serif;
+}
+
+.primary-btn {
+	background-color: #f26522;
+	color: #fff;
+	padding: 0.7rem 1rem;
+}
+
+.primary-btn:hover {
+	background-color: transparent;
+	border: 2px solid #f26522 !important;
+}
+
+.secondary-btn {
+	color: #fff;
+	border: 2px solid #fff !important;
+	padding: 0.7rem 1rem;
+}
+
+.secondary-btn:hover {
+	background-color: #f26522;
+	border: inherit !important;
+}
+
+#timer {
+	background-color: rgb(4, 0, 255);
+	border-radius: 0.3rem;
+}
+
+/* index.html */
+#landing-page {
+	font-family: "Equal Sans Demo", sans-serif;
+	background: url(../assets/landing\ bg.png);
+	background-size: cover;
+}
+
+#landing-page img {
+	width: 200px;
+}
+
+#landing-page h2 {
+	letter-spacing: 2px;
+}
+
+#landing-page h1 {
+	line-height: 100%;
+	text-shadow: 4px 4px 1px rgba(242, 101, 34, 0.5);
+}
+
+#landing-page p {
+	font-size: 1.2rem;
+}
+
+#landing-page .btn:hover {
+	background-color: transparent;
+	border: 1px solid #f26522;
+}
+
+/* background.html */
+#background-page {
+	font-family: "Equal Sans Demo", sans-serif;
+	background: url(../assets/backgroung-page.png);
+	background-size: cover;
+}
+
+#background-page h1 {
+	margin-bottom: 2rem;
+}
+
+#background-page p {
+	margin-bottom: 1.5rem;
+}
+
+#background-page span {
+	color: #f26522;
+}
+
+#background-page a {
+	color: #fff;
+}
+
+#background-page h4.display-3 {
+	color: #f7d706;
+}
+
+/* room1 */
+#room1 {
+	font-family: "Equal Sans Demo", sans-serif;
+	background: url(../assets/backgroung-page.png);
+}
+
+#room1 .card {
+	background: transparent;
+	position: relative;
+	max-width: 19rem;
+}
+
+#room1 .card-title {
+	position: absolute;
+	color: #ffdd00;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	width: 100%;
+}
+
+#room1 .card-body {
+	background: black;
+	border-radius: 10px;
+}
+
+#room1 .card-text {
+	font-family: "Metropolis", sans-serif;
+}
+
+.task {
+	display: flex;
+	align-items: center;
+	color: black;
+	background: #fff;
+	font-family: "Metropolis", sans-serif;
+	border-left: 10px solid #0081ff;
+	border-radius: 5px;
+	padding: 1rem 1rem;
+}
+
+.task p {
+	margin: 0;
+	font-size: 18px;
+}
+
+/* room2 */
+#room2 {
+	font-family: "Equal Sans Demo", sans-serif;
+	background: url(../assets/room2-bg.png);
+}
+
+/* room3 */
+#room3 {
+	font-family: "Equal Sans Demo", sans-serif;
+	background: url(../assets/room3-bg.png);
+}
+
+#room3 .card {
+	background: transparent;
+	position: relative;
+	font-family: "Metropolis", sans-serif;
+}
+
+#room3 .card img {
+	width: 7rem;
+}
+
+#room3 .cards-section input {
+	display: block !important;
+	/* border-radius: 0; */
+}
+
+#room3::after {
+	content: "";
+	position: fixed;
+	inset: 0;
+	background: red;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.3s;
+}
+
+#room3.red::after {
+	opacity: 0.9;
+}
+
+/* success page */
+#success-page {
+	font-family: "Equal Sans Demo", sans-serif;
+	background: url(../assets/success-bg.png);
+}
+
+#success-page h2 {
+	text-decoration: underline;
+}
+
+#success-page h3.display-5 {
+	color: #f7d706;
+}
+
+/* badge page */
+#badge-page {
+	font-family: "Equal Sans Demo", sans-serif;
+	background: url(../assets/badge-bg.png);
+}
+
+#badge-page img {
+	width: 22rem;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 576px) {
+	/* index.html */
+	#landing-page img {
+		max-width: 100px;
+	}
+	#landing-page h2 {
+		font-size: 1.6rem !important;
+	}
+	#landing-page h1 {
+		font-size: 2.5rem !important;
+	}
+	#landing-page p {
+		font-size: 0.9rem !important;
+		width: 100% !important;
+	}
+	#landing-page .btn {
+		font-size: 0.8rem;
+		background-color: #f26522;
+		color: #fff;
+		padding: 0.5rem 0.7rem;
+	}
+
+	/* background.html */
+	#background-page h1 {
+		margin-bottom: 1rem;
+		font-size: 2.5rem !important;
+	}
+	#background-page p {
+		margin-bottom: 0.7rem;
+		font-size: 1.4rem !important;
+	}
+	#background-page .btn {
+		font-size: 0.8rem;
+		border: 1px solid #fff;
+	}
+	/* room 1 */
+	#room1 .task p {
+		font-size: 16px;
+	}
+	#room1 .card {
+		max-width: 15rem;
+	}
+	#room1 .card-title {
+		position: absolute;
+		height: 50%;
+		width: 100%;
+	}
+
+	#room1 .card-body {
+		padding: 8px;
+	}
+
+	#room1 p.card-text {
+		font-size: 16px;
+	}
+
+	/* room 2 */
+	#room2 .card {
+		max-width: 25rem;
+	}
+
+	#room2 .task p {
+		font-size: 18px !important;
+	}
+
+	/* room 3 */
+	#room3 .cards-section img {
+		width: 70px !important;
+	}
+
+	#room3 .cards-section h6 {
+		font-size: 16px;
+	}
+
+	#room3 .task p {
+		font-size: 18px !important;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		max-width: 100%;
+	}
+
+	#room2 .card {
+		min-width: 15rem;
+	}
+}
+
+@media (max-width: 992px) {
+	/* background.html */
+	#background-page h1 {
+		font-size: 3rem;
+		margin-bottom: 1rem;
+	}
+
+	#background-page p {
+		font-size: 2rem !important;
+		line-height: 120%;
+		margin-bottom: 1.5rem;
+	}
+
+	#room2 .task {
+		width: 100% !important;
+	}
+
+	/* room 3 */
+	#room3 .cards-section img {
+		width: 100px;
+	}
+
+	#room3 .container {
+		max-width: 100%;
+	}
+}
+
+@media (max-width: 1200px) {
+	#room2 .task {
+		width: 100% !important;
+	}
+
+	#room2 .card {
+		min-width: 17rem;
+	}
+}
