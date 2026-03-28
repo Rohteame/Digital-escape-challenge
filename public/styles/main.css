@@ -1,3 +1,21 @@
+@font-face {
+	font-family: "Metropolis";
+	src:
+		url(/assets/fonts/Metropolis-Bold.woff2) format("woff2"),
+		url(/assets/fonts/Metropolis-Bold.otf) format("opentype");
+	font-weight: 700;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Equal Sans Demo";
+	src: url(/assets/fonts/OpenSans-VariableFont_wdth\,wght.woff2) format("woff2");
+	font-weight: 100 900;
+	font-style: normal;
+	font-display: swap;
+}
+
 :root {
 	--metropolis: "Metropolis", sans-serif;
 	--equal-sans: "Equal Sans Demo", sans-serif;
