@@ -7,6 +7,15 @@
 	font-style: normal;
 	font-display: swap;
 }
+@font-face {
+	font-family: "Metropolis";
+	src:
+		url(/assets/fonts/Metropolis-Regular.woff2) format("woff2"),
+		url(/assets/fonts/Metropolis-Regular.otf) format("opentype");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
 
 @font-face {
 	font-family: "Equal Sans Demo";
@@ -97,6 +106,7 @@ a {
 /* index.html */
 #landing-page {
 	font-family: "Equal Sans Demo", sans-serif;
+	background-color: #0f172a;
 	background: url(../assets/landing\ bg.png);
 	background-size: cover;
 }
@@ -126,6 +136,7 @@ a {
 /* background.html */
 #background-page {
 	font-family: "Equal Sans Demo", sans-serif;
+	background-color: #0f172a;
 	background: url(../assets/backgroung-page.png);
 	background-size: cover;
 }
@@ -146,13 +157,14 @@ a {
 	color: #fff;
 }
 
-#background-page h4.display-3 {
+#background-page h4 {
 	color: #f7d706;
 }
 
 /* room1 */
 #room1 {
 	font-family: "Equal Sans Demo", sans-serif;
+	background-color: #0f172a;
 	background: url(../assets/backgroung-page.png);
 }
 
@@ -200,12 +212,14 @@ a {
 /* room2 */
 #room2 {
 	font-family: "Equal Sans Demo", sans-serif;
+	background-color: #0f172a;
 	background: url(../assets/room2-bg.png);
 }
 
 /* room3 */
 #room3 {
 	font-family: "Equal Sans Demo", sans-serif;
+	background-color: #0f172a;
 	background: url(../assets/room3-bg.png);
 }
 
@@ -241,6 +255,7 @@ a {
 /* success page */
 #success-page {
 	font-family: "Equal Sans Demo", sans-serif;
+	background-color: #0f172a;
 	background: url(../assets/success-bg.png);
 }
 
@@ -248,13 +263,14 @@ a {
 	text-decoration: underline;
 }
 
-#success-page h3.display-5 {
+#success-page h3 {
 	color: #f7d706;
 }
 
 /* badge page */
 #badge-page {
 	font-family: "Equal Sans Demo", sans-serif;
+	background-color: #0f172a;
 	background: url(../assets/badge-bg.png);
 }
 
